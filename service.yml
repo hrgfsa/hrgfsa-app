@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-world-service
+spec:
+  selector:
+    app: hello-world   # Must match the label in your Deployment
+  ports:
+    - protocol: TCP
+      port: 80         # ClusterIP port
+      targetPort: 80   # Container port exposed by Nginx
+      nodePort: 30080  # External port on your nodes
+  type: NodePort

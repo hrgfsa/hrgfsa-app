@@ -1,0 +1,17 @@
+name: hw-workflow
+on: 
+  push:
+     branches:
+        - main
+jobs:
+    build_and_push:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout repo
+              uses: actions/checkout@v5
+
+            - name: login to dockerhub
+              uses: docker/login-action@v3
+              with:
+                    username: ${{ vars.DOCKERHUB.USERNAME}}
+                    password: ${{ secrets.DOCKERHUB_TOKEN}}

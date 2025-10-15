@@ -1,0 +1,11 @@
+{
+  "name": "hello-world-node",
+  "version": "1.0.0",
+  "description": "Simple Hello World Node.js app for Docker demo",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Jai Sharma",
+  "license": "MIT"
+}
