@@ -7,6 +7,10 @@ This is a simple web application stating "hellow world" on a GKE cluster which u
 
 I have made an organization HRGFSA and explicitely made three repositories using the polyrepo way i.e industry standard. The DEVOPS team would deal with HRGFSA-HELM-DEPLOYMENTS and HRGFSA-INFRA-GCP only.
 
+<img width="1892" height="674" alt="image" src="https://github.com/user-attachments/assets/9fdb48d6-1c6f-40a2-b010-29f7ff93e7f1" />
+
+
+
 This repository collection manages the deployment and infrastructure for the HRGFSA application, using Kubernetes on Google Cloud Platform (GCP), Helm for Kubernetes manifest templating, and Terraform for infrastructure provisioning.
 
 ---
@@ -71,5 +75,6 @@ This repository collection manages the deployment and infrastructure for the HRG
 - Each repository manages its issues and pull requests.
 - Contributions are welcome.
 - Documentation and setup guides are available within respective repositories.
+
 
 
