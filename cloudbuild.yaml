@@ -1,0 +1,10 @@
+steps:
+
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/natural-motif-469318-d4/helloworld:$COMMIT_SHA', '.' ]
+
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'push', 'gcr.io/natural-motif-469318-d4/helloworld:$COMMIT_SHA']
+
+images:
+ - 'gcr.io/natural-motif-469318-d4/helloworld:$COMMIT_SHA'
